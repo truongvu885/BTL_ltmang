@@ -12,7 +12,7 @@ public class client {
 		
 		try {
 			Socket socket = new Socket("127.0.0.1",9555);
-			
+			//tạo các luồng nhâp xuất dữ liệu
 			DataOutputStream data_out = new DataOutputStream(socket.getOutputStream());
 			DataInputStream data_in  = new DataInputStream(socket.getInputStream());
 			
