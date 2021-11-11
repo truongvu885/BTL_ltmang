@@ -59,6 +59,7 @@ public class server {
 				
 				if(data.equalsIgnoreCase("exit"))
 				{
+					System.out.println("-----------------The end------------------");
 					break;
 				}
 				System.out.println("data: "+data);

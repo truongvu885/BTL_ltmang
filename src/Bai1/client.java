@@ -30,8 +30,8 @@ public class client {
 					System.out.println("-------The end-------");
 					break;
 				}
-				else
-					System.out.println("\t\t...CONNECTED TO SERVER...\t\t");
+//				else
+//					System.out.println("\t\t...CONNECTED TO SERVER...\t\t");
 					
 				String nhan = data_in.readUTF();
 				System.out.println("Server trả về: "+nhan);

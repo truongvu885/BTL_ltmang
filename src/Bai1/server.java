@@ -22,10 +22,10 @@ public class server {
 			while(true)
 			{
 			String data = data_in.readUTF();
-			if(data.length()!=0)
-			{
-				System.out.println("\t\t...CLIENT CONNECTED..."+dem++);
-			}
+//			if(data.length()!=0)
+//			{
+//				System.out.println("\t\t...CLIENT CONNECTED..."+dem++);
+//			}
 			if(data.equalsIgnoreCase("exit"))
 			{
 				System.out.println("----------the end----------");

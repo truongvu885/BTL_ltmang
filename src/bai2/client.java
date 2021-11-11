@@ -28,6 +28,7 @@ public class client {
 			
 			if(data.equalsIgnoreCase("exit"))
 			{
+				System.out.println("=============The end=============");
 				break;
 			}
 			
