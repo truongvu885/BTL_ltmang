@@ -14,22 +14,20 @@ public class client {
 		DataOutputStream data_out = new DataOutputStream(socket.getOutputStream());
 		DataInputStream data_in = new DataInputStream(socket.getInputStream());
 		Scanner input = new Scanner(System.in);
+		System.out.println("'new' để tạo số mới\n'exit' để thoát");
 		while(true)
 		{
-			System.out.print("Nhập 1 số: ");
-			int so = input.nextInt();
+			System.out.print("Bạn đoán : ");
+			String so = input.nextLine();
 			
-			if(so == 00)
-			{
-				break;
-			}
-			
-				data_out.write(so);
+				data_out.writeUTF(so);
 				data_out.flush();
-				
+				if(so.equalsIgnoreCase("exit"))
+				{
+					break;
+				}
 				String str = data_in.readUTF();
 				System.out.println("Server trả về: "+str);
-			
 		}
 		socket.close();
 		data_in.close();
